@@ -1,0 +1,8 @@
+.like-btn {
+    padding       : 0.5rem 1rem;
+    border        : 1px solid transparent;
+    border-radius : 0.5rem;
+    color         : var(white);
+    cursor        : pointer;
+    background-color:goldenrod;
+  }
