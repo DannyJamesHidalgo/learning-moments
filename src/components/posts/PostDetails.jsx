@@ -51,6 +51,10 @@ export const PostDetails = ({ currentUser }) => {
                 console.error('Error submitting like:', error);
             });
     };
+    
+    
+    
+    
     const handleUnlike = () => {
         const likeObject  = likes?.find((like) => like.userId === currentUser.id);
         const likeId      = likeObject?.id;

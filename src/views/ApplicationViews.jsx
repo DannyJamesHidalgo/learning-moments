@@ -4,6 +4,7 @@ import { AllPosts } from '../components/posts/AllPosts.jsx'
 import { useState, useEffect } from 'react'
 import { PostDetails } from '../components/posts/PostDetails.jsx'
 import { CreatePost } from '../components/form/CreatePost.jsx'
+import { MyPosts } from '../components/posts/MyPosts.jsx'
 export const ApplicationViews = () => {
 
     const [currentUser, setCurrentUser] = useState({})
@@ -33,7 +34,7 @@ export const ApplicationViews = () => {
                 </Route>
                 <Route path  = 'createPost' element  = {<CreatePost currentUser={currentUser} />} />
                 
-                <Route path='myPosts' element={<MyPosts/>}/>
+                <Route path='myPosts' element={<MyPosts currentUser={currentUser}/>}/>
             </Route>
         </Routes>
     )
